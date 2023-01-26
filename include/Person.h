@@ -3,13 +3,13 @@
 class Person
 {
 private:
-    std::string full_name;
+    std::string fullName;
     int age;
     std::string job;
 
     bool isPremiumEmployee();
 public:
-    Person(std::string r_full_name, int r_age, std::string r_job);
+    Person(std::string rFullName, int rAge, std::string rJob);
 
     std::string getName();
     int getAge();

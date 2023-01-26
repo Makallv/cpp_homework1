@@ -2,10 +2,10 @@
 #include <utility>
 #include "../include/Person.h"
 
-Person::Person(std::string r_full_name, int r_age, std::string r_job) {
-    full_name = std::move(r_full_name);
-    age = r_age;
-    job = std::move(r_job);
+Person::Person(std::string rFullName, int rAge, std::string rJob) {
+    fullName = std::move(rFullName);
+    age = rAge;
+    job = std::move(rJob);
 }
 
 bool Person::isPremiumEmployee() {
@@ -13,7 +13,7 @@ bool Person::isPremiumEmployee() {
 }
 
 std::string Person::getName() {
-    return full_name;
+    return fullName;
 }
 
 std::string Person::getJob() {
@@ -25,14 +25,14 @@ int Person::getAge() {
 }
 
 void Person::printData() {
-    std::cout << "Name: " + full_name +"\n"
+    std::cout << "Name: " + fullName + "\n"
     << "Age: " << age << "\n"
     << "Job: " + job + "\n"
     << "Is premium: " << isPremiumEmployee() << std::endl;
 }
 
 void Person::printToFile(std::ofstream &file) {
-    file << "Name: " << full_name << " | "
+    file << "Name: " << fullName << " | "
          << " Age: " << age << " | "
          << " Job: " << job << " | "
          << " Is premium: " << isPremiumEmployee() << std::endl;
