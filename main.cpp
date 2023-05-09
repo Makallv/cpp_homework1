@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include "include/Person.h"
-#include <fstream>
 #include <string>
 
 int main() {
@@ -16,26 +15,26 @@ int main() {
     int n;
     infile >> n;
 
-    std::string full_name;
+    std::string fullName;
     int age;
     std::string job;
 
-    std::vector<Person> person_vector;
+    std::vector<Person> personVector;
 
     for (int i = 0; i < n; ++i) {
 
-        std::cout << "Please enter the persons" << i + 1 << " name";
+        std::cout << "Please enter the persons" << i + 1 << " name ";
         std::cin >> std::ws;
-        std::getline(std::cin, full_name);
+        (void)std::getline(std::cin, fullName);
 
-        std::cout << "Please enter the persons" << i + 1 << " age";
+        std::cout << "Please enter the persons" << i + 1 << " age ";
         std::cin >> age;
 
-        std::cout << "Please enter the persons" << i + 1 << " job title";
+        std::cout << "Please enter the persons" << i + 1 << " job title ";
         std::cin >> job;
 
-        Person person(full_name, age, job);
-        person_vector.push_back(person);
+        Person person(fullName, age, job);
+        personVector.push_back(person);
 
     }
 
@@ -46,7 +45,7 @@ int main() {
     }
 
     auto i = 0;
-    for (auto & x : person_vector){
+    for (auto & x : personVector){
         std::cout << "Person " << i << std::endl;
         x.printData();
         x.printToFile(outfile);

@@ -1,2 +1,2 @@
-Name: Marks Cimermanis |  Age: 21 |  Job: TDL |  Is premium: 0
-Name: Jeff Bezos |  Age: 42 |  Job: TDL |  Is premium: 1
+Name: Marks |  Age: 22 |  Job: TDL |  Is premium: 0
+Name: John |  Age: 25 |  Job: TDL |  Is premium: 1
