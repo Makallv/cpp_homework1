@@ -27,7 +27,7 @@ int Person::getAge() {
 void Person::printData() {
     std::cout << "Name: " + fullName + "\n"
     << "Age: " << age << "\n"
-    << "Job: " + job + "\n"
+    << "Job: " << job << "\n"
     << "Is premium: " << isPremiumEmployee() << std::endl;
 }
 

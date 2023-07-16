@@ -1,2 +1,4 @@
-Name: Marks |  Age: 22 |  Job: TDL |  Is premium: 0
-Name: John |  Age: 25 |  Job: TDL |  Is premium: 1
+Name: Marks |  Age: 25 |  Job: TDL |  Is premium: 1
+Name: Sam |  Age: 22 |  Job: TDL |  Is premium: 0
+Name: Jenny |  Age: 26 |  Job: Webdev |  Is premium: 0
+Name: Makla |  Age: 22 |  Job: Webdev |  Is premium: 0
